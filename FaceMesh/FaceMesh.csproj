@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net9.0-android;net8.0-android</TargetFrameworks>
+		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+	<PropertyGroup>
+		<PackageId>Anjo.Android.MediaPipe.FaceMesh</PackageId>
+		<PackageVersion>0.10.20</PackageVersion>
+		<AssemblyVersion>0.10.20</AssemblyVersion>
+		<FileVersion>0.10.20</FileVersion>
+		<Version>0.10.20</Version>
+		<Title>Anjo Android MediaPipe.FaceMesh SDK</Title>
+		<Authors>Wael Anjo</Authors>
+		<Owners>Wael Anjo</Owners>
+		<PackageProjectUrl>https://github.com/mhdwaelanjo/Anjo.Android.MediaPipe</PackageProjectUrl>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<Description>.NET for Android (formerly Xamarin.Android) Binding Library - The MediaPipe FaceMesh SDK</Description>
+		<PackageReleaseNotes>The MediaPipe Face Mesh SDK v0.10.20</PackageReleaseNotes>
+		<Copyright>Copyright (c) 2025 Wael Anjo</Copyright>
+		<PackageTags>Xamarin.Android, NET MAUI, MediaPipe, com.google.mediapipe, face-filters </PackageTags>
+		<Summary>MediaPipe Solutions provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in your applications. You can plug these solutions into your applications immediately, customize them to your needs, and use them across multiple development platforms. </Summary>
+		<!-- Include symbol files (*.pdb) in the built .nupkg -->
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageIcon>icon.png</PackageIcon>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Remove="Jars\facemesh-0.10.20.aar" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.8.1" />
+		<PackageReference Include="Xamarin.Google.AutoValue.Annotations" Version="1.11.0" />
+		<PackageReference Include="Xamarin.Google.Guava" Version="33.2.1.1" />
+		<PackageReference Include="Xamarin.Kotlin.StdLib" Version="2.0.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\SolutionCore\SolutionCore.csproj" />
+	</ItemGroup>
+</Project>

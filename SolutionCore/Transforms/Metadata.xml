@@ -1,0 +1,21 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+	<remove-node path="/api/package[@name='com.google.mediapipe.formats.proto']/interface[@name='ClassificationProto.ClassificationListOrBuilder']/method[@name='getClassificationList' and count(parameter)=0]" />
+	<remove-node path="/api/package[@name='com.google.mediapipe.formats.proto']/interface[@name='DetectionProto.DetectionListOrBuilder']/method[@name='getDetectionList' and count(parameter)=0]" />
+	<remove-node path="/api/package[@name='com.google.mediapipe.formats.proto']/interface[@name='LandmarkProto.LandmarkListOrBuilder']/method[@name='getLandmarkList' and count(parameter)=0]" />
+	<remove-node path="/api/package[@name='com.google.mediapipe.formats.proto']/interface[@name='LocationDataProto.LocationDataOrBuilder']/method[@name='getRelativeBoundingBox' and count(parameter)=0]" />
+	<remove-node path="/api/package[@name='com.google.mediapipe.formats.proto']/interface[@name='LocationDataProto.LocationDataOrBuilder']/method[@name='getBoundingBox' and count(parameter)=0]" />
+	
+	<remove-node path="/api/package[@name='com.google.mediapipe.proto']/interface[@name='MediaPipeLoggingProto.SolutionEventOrBuilder']/method[@name='getEventDetailsCase' and count(parameter)=0]" />
+	
+	<remove-node path="/api/package[@name='com.google.mediapipe.framework']/class[@name='AssetCacheDbHelper.AssetCacheEntry']" />
+
+	<remove-node path="/api/package[@name='com.google.mediapipe.util.proto']/class[@name='RenderDataProto.RenderAnnotation']" />
+
+</metadata>
